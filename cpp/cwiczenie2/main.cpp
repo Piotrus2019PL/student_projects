@@ -1,28 +1,25 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
-void sortowanie_babelkowe(int tab[], int n){
-	for(int i=0; i<n-1; i++){
-		for(int j=0; j<n-i-1; j++){
-			if(tab[j]>tab[j+1]){
-				swap(tab[j], tab[j+1]);
-			}
-		}
-	}
-}
 
 int main(){
-	int tab[] = {3,2,5,4};
+	vector<int> numbers;
+	numbers.push_back(4);
+	numbers.push_back(5);
+	numbers.push_back(2);
+	numbers.push_back(3);
 	
 
-	sortowanie_babelkowe(tab, 4);
-
-	cout << "Posorotwane liczby: ";
-	for(int i=0; i<4; i++){
-		cout << tab[i] << " ";
+	for(int x=0;x<numbers.size(); x++){
+		for(int y=0;y<numbers.size(); y++){
+		swap(numbers[x], numbers[y]);
 	}
-	cout<<endl;
+
+}
+for(int v=0; v<numbers.size(); v++){
+	cout<<numbers[v]<<'\n';
+}
 
 	return 0;
 }
