@@ -3,20 +3,21 @@
 using namespace std;
 
 int main(){
-	char pl[5][5];
-	for(int i = 0; i<5; i++){
-		for(int j=0; j<5; j++){
+	char pl[3][3];
+	for(int i = 0; i<3; i++){
+		for(int j=0; j<3; j++){
 		pl[i][j]='-';
 		}
 	}
 
-	int stX = 2;
-	int stY = 2;
-
+	int stX;
+	int stY;
+	cin>>stX;
+	cin>>stY;
 
 	while(0==0){
-		for(int i = 0; i<5; i++){
-			for(int j = 0; j<5; j++){
+		for(int i = 0; i<3; i++){
+			for(int j = 0; j<3; j++){
 			cout<<pl[i][j]<<" ";
 			}
 		cout<<endl;
